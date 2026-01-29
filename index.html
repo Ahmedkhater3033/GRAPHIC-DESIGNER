@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Khater | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #000; color: #fff; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .text-gold-gradient { background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+        .custom-cursor { width: 20px; height: 20px; border: 2px solid #bf953f; border-radius: 50%; position: fixed; pointer-events: none; z-index: 9999; transition: transform 0.1s ease; transform: translate(-50%, -50%); }
+        .project-card { position: relative; overflow: hidden; border-radius: 12px; transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); background: #111; }
+        .project-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(191, 149, 63, 0.15); }
+        .project-image { width: 100%; height: 100%; object-fit: cover; }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+
+    <div class="custom-cursor" id="cursor"></div>
+
+    <header class="h-screen flex flex-col justify-center items-center text-center px-4 relative">
+        <div class="mb-8 relative group">
+            <div class="absolute -inset-1 bg-gradient-to-r from-[#bf953f] to-[#fcf6ba] rounded-full blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+            <img src="assets/profile.jpg" alt="Ahmed Khater" class="relative w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-[#bf953f] object-cover shadow-2xl">
+        </div>
+        <h1 class="text-6xl md:text-9xl font-black uppercase tracking-tighter mb-4">
+            Ahmed <span class="text-gold-gradient">Khater</span>
+        </h1>
+        <p class="text-slate-400 tracking-[0.5em] uppercase text-xs md:text-xl">Creative Director • Brand Strategist</p>
+    </header>
+
+    <section class="py-32 px-6 md:px-20 bg-[#050505]">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-5xl font-black mb-24 uppercase reveal">Featured <span class="text-gold-gradient">Works</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+                
+                <div class="group reveal">
+                    <a href="projects/kelloggs/1.jpg" data-fancybox="kelloggs">
+                        <div class="project-card aspect-video"><img src="projects/kelloggs/1.jpg" class="project-image"></div>
+                    </a>
+                    <div style="display:none">
+                        <a href="projects/kelloggs/2.jpg" data-fancybox="kelloggs"></a>
+                        <a href="projects/kelloggs/3.jpg" data-fancybox="kelloggs"></a>
+                        <a href="projects/kelloggs/4.jpg" data-fancybox="kelloggs"></a>
+                    </div>
+                    <div class="mt-8 px-2">
+                        <span class="text-gold-gradient text-xs font-bold uppercase tracking-widest">Advertising</span>
+                        <h3 class="text-3xl font-black mt-2 uppercase">Kellogg's Concept</h3>
+                    </div>
+                </div>
+
+                <div class="group reveal">
+                    <a href="projects/adidas/1.jpg" data-fancybox="adidas">
+                        <div class="project-card aspect-video"><img src="projects/adidas/1.jpg" class="project-image"></div>
+                    </a>
+                    <div style="display:none">
+                        <a href="projects/adidas/2.jpg" data-fancybox="adidas"></a>
+                        <a href="projects/adidas/3.jpg" data-fancybox="adidas"></a>
+                        <a href="projects/adidas/4.jpg" data-fancybox="adidas"></a>
+                    </div>
+                    <div class="mt-8 px-2">
+                        <span class="text-gold-gradient text-xs font-bold uppercase tracking-widest">Sports Branding</span>
+                        <h3 class="text-3xl font-black mt-2 uppercase">Adidas Ultra</h3>
+                    </div>
+                </div>
+
+                <div class="group reveal">
+                    <a href="projects/headphone/1.jpg" data-fancybox="headphone">
+                        <div class="project-card aspect-video"><img src="projects/headphone/1.jpg" class="project-image"></div>
+                    </a>
+                    <div style="display:none">
+                        <a href="projects/headphone/2.jpg" data-fancybox="headphone"></a>
+                        <a href="projects/headphone/3.jpg" data-fancybox="headphone"></a>
+                        <a href="projects/headphone/4.jpg" data-fancybox="headphone"></a>
+                    </div>
+                    <div class="mt-8 px-2">
+                        <span class="text-gold-gradient text-xs font-bold uppercase tracking-widest">Product Design</span>
+                        <h3 class="text-3xl font-black mt-2 uppercase">Sonic Sound</h3>
+                    </div>
+                </div>
+
+                <div class="group reveal">
+                    <a href="projects/amjad/1.jpg" data-fancybox="amjad">
+                        <div class="project-card aspect-video"><img src="projects/amjad/1.jpg" class="project-image"></div>
+                    </a>
+                    <div style="display:none">
+                        <a href="projects/amjad/2.jpg" data-fancybox="amjad"></a>
+                        <a href="projects/amjad/3.jpg" data-fancybox="amjad"></a>
+                        <a href="projects/amjad/4.jpg" data-fancybox="amjad"></a>
+                    </div>
+                    <div class="mt-8 px-2">
+                        <span class="text-gold-gradient text-xs font-bold uppercase tracking-widest">Real Estate</span>
+                        <h3 class="text-3xl font-black mt-2 uppercase">Amjad Residences</h3>
+                    </div>
+                </div>
+
+                <div class="group reveal">
+                    <a href="projects/elite/1.jpg" data-fancybox="elite">
+                        <div class="project-card aspect-video"><img src="projects/elite/1.jpg" class="project-image" alt="Elite Branding"></div>
+                    </a>
+                    <div style="display:none">
+                        <a href="projects/elite/2.jpg" data-fancybox="elite"></a>
+                        <a href="projects/elite/3.jpg" data-fancybox="elite"></a>
+                        <a href="projects/elite/4.jpg" data-fancybox="elite"></a>
+                    </div>
+                    <div class="mt-8 px-2">
+                        <span class="text-gold-gradient text-xs font-bold uppercase tracking-widest">Branding</span>
+                        <h3 class="text-3xl font-black mt-2 uppercase">Elite Identity</h3>
+                    </div>
+                </div>
+
+                <div class="group reveal">
+                    <a href="projects/dew/1.jpg" data-fancybox="dew">
+                        <div class="project-card aspect-video"><img src="projects/dew/1.jpg" class="project-image" alt="Mountain Dew"></div>
+                    </a>
+                    <div style="display:none">
+                        <a href="projects/dew/2.jpg" data-fancybox="dew"></a>
+                        <a href="projects/dew/3.jpg" data-fancybox="dew"></a>
+                        <a href="projects/dew/4.jpg" data-fancybox="dew"></a>
+                    </div>
+                    <div class="mt-8 px-2">
+                        <span class="text-gold-gradient text-xs font-bold uppercase tracking-widest">Beverage Ads</span>
+                        <h3 class="text-3xl font-black mt-2 uppercase">Mountain Dew</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-32 text-center border-t border-zinc-900 bg-black">
+        <h2 class="text-4xl font-black mb-8 uppercase reveal">Let's Create Something <span class="text-gold-gradient">Iconic</span></h2>
+        <a href="mailto:contact@ahmedkhater.com" class="inline-block px-10 py-4 border border-[#bf953f] text-[#bf953f] uppercase tracking-widest font-bold hover:bg-[#bf953f] hover:text-black transition-all duration-500 reveal">Send an Email</a>
+        <p class="mt-20 text-zinc-600 text-sm uppercase tracking-widest">© 2026 Ahmed Khater. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const cursor = document.getElementById('cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+        Fancybox.bind("[data-fancybox]", { transitionEffect: "slide", infinite: true });
+        const reveal = () => {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(el => {
+                const windowHeight = window.innerHeight;
+                const elementTop = el.getBoundingClientRect().top;
+                if (elementTop < windowHeight - 150) { el.classList.add('active'); }
+            });
+        }
+        window.addEventListener('scroll', reveal);
+        reveal();
+    </script>
+</body>
+</html>
