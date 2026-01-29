@@ -17,6 +17,8 @@
         .project-image { width: 100%; height: 100%; object-fit: cover; }
         .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
         .reveal.active { opacity: 1; transform: translateY(0); }
+        .social-link { color: #888; transition: all 0.3s ease; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: bold; }
+        .social-link:hover { color: #bf953f; transform: translateY(-2px); }
     </style>
 </head>
 <body>
@@ -28,10 +30,19 @@
             <div class="absolute -inset-1 bg-gradient-to-r from-[#bf953f] to-[#fcf6ba] rounded-full blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
             <img src="assets/profile.jpg" alt="Ahmed Khater" class="relative w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-[#bf953f] object-cover shadow-2xl">
         </div>
+        
         <h1 class="text-6xl md:text-9xl font-black uppercase tracking-tighter mb-4">
             Ahmed <span class="text-gold-gradient">Khater</span>
         </h1>
-        <p class="text-slate-400 tracking-[0.5em] uppercase text-xs md:text-xl">Creative Director • Brand Strategist</p>
+        
+        <p class="text-slate-400 tracking-[0.5em] uppercase text-xs md:text-xl mb-10">Creative Director • Brand Strategist</p>
+
+        <div class="flex flex-wrap justify-center gap-6 md:gap-10 reveal">
+            <a href="https://www.linkedin.com/in/ahmed-khater-361258304/" target="_blank" class="social-link">LinkedIn</a>
+            <a href="https://www.instagram.com/ahmedkhater494/" target="_blank" class="social-link">Instagram</a>
+            <a href="https://www.tiktok.com/@ahmedkhater225" target="_blank" class="social-link">TikTok</a>
+            <a href="https://www.facebook.com/profile.php?id=100092551592973" target="_blank" class="social-link">Facebook</a>
+        </div>
     </header>
 
     <section class="py-32 px-6 md:px-20 bg-[#050505]">
@@ -134,8 +145,17 @@
     </section>
 
     <footer class="py-32 text-center border-t border-zinc-900 bg-black">
-        <h2 class="text-4xl font-black mb-8 uppercase reveal">Let's Create Something <span class="text-gold-gradient">Iconic</span></h2>
-        <a href="mailto:contact@ahmedkhater.com" class="inline-block px-10 py-4 border border-[#bf953f] text-[#bf953f] uppercase tracking-widest font-bold hover:bg-[#bf953f] hover:text-black transition-all duration-500 reveal">Send an Email</a>
+        <h2 class="text-4xl font-black mb-12 uppercase reveal">Let's Create Something <span class="text-gold-gradient">Iconic</span></h2>
+        
+        <div class="flex flex-wrap justify-center gap-6 mb-16 reveal">
+            <a href="https://www.linkedin.com/in/ahmed-khater-361258304/" target="_blank" class="social-link">LinkedIn</a>
+            <a href="https://www.instagram.com/ahmedkhater494/" target="_blank" class="social-link">Instagram</a>
+            <a href="https://www.tiktok.com/@ahmedkhater225" target="_blank" class="social-link">TikTok</a>
+            <a href="https://www.facebook.com/profile.php?id=100092551592973" target="_blank" class="social-link">Facebook</a>
+        </div>
+
+        <a href="mailto:ahmedkhater.design@gmail.com" class="inline-block px-10 py-4 border border-[#bf953f] text-[#bf953f] uppercase tracking-widest font-bold hover:bg-[#bf953f] hover:text-black transition-all duration-500 reveal">Send an Email</a>
+        
         <p class="mt-20 text-zinc-600 text-sm uppercase tracking-widest">© 2026 Ahmed Khater. All Rights Reserved.</p>
     </footer>
 
