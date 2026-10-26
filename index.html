@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Khater | Portfolio</title>
+    <title>أحمد خاطر | معرض الأعمال · Ahmed Khater | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
@@ -108,6 +108,21 @@
         .featured-works-grid > .group.reveal:not(.amjad-identity-card) > .mt-8.px-2 > p {
             color: #cbd7e6;
         }
+        .bilingual-stack { display: flex; flex-direction: column; gap: 0.14em; }
+        .bilingual-ar, .bilingual-en { display: block; unicode-bidi: isolate; text-transform: none; }
+        .bilingual-ar { direction: rtl; letter-spacing: normal; }
+        .bilingual-en { direction: ltr; font-size: 0.82em; opacity: 0.76; letter-spacing: 0.015em; }
+        .bilingual-heading { gap: 0.12em; }
+        .bilingual-heading > .bilingual-en { font-size: 0.58em; line-height: 1.2; }
+        .hero-name .bilingual-ar { font-size: 0.68em; line-height: 1.1; }
+        .hero-name .bilingual-en { font-size: 1em; line-height: 1; opacity: 1; }
+        .dual-title { display: flex; flex-direction: column; gap: 0.12em; }
+        .dual-title .bilingual-en { text-align: inherit; font-size: 0.78em; }
+        .dual-label { display: flex !important; flex-direction: column; align-items: flex-start; gap: 0.1em; white-space: normal; text-align: start; }
+        .dual-label .bilingual-en { font-size: 0.76em; }
+        .bilingual-copy { display: flex; flex-direction: column; gap: 0.9rem; }
+        .bilingual-copy .bilingual-ar { direction: rtl; text-align: right; line-height: 1.9; }
+        .bilingual-copy .bilingual-en { direction: ltr; text-align: left; line-height: 1.75; font-size: 0.94em; }
     </style>
 </head>
 <body>
@@ -117,14 +132,15 @@
     <header class="h-screen flex flex-col justify-center items-center text-center px-4 relative">
         <div class="mb-8 relative group">
             <div class="absolute -inset-1 bg-gradient-to-r from-[#bf953f] to-[#fcf6ba] rounded-full blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
-            <img src="assets/profile.jpg" alt="Ahmed Khater" class="relative w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-[#bf953f] object-cover shadow-2xl">
+            <img src="assets/profile.jpg" alt="أحمد خاطر | Ahmed Khater" class="relative w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-[#bf953f] object-cover shadow-2xl">
         </div>
 
-        <h1 class="text-6xl md:text-9xl font-black uppercase tracking-tighter mb-4">
-            Ahmed <span class="text-gold-gradient">Khater</span>
+        <h1 class="text-6xl md:text-9xl font-black uppercase tracking-tighter mb-4 bilingual-stack hero-name">
+            <span class="bilingual-ar" lang="ar">أحمد خاطر</span>
+            <span class="bilingual-en" lang="en">Ahmed <span class="text-gold-gradient">Khater</span></span>
         </h1>
 
-        <p class="text-slate-400 tracking-[0.5em] uppercase text-xs md:text-xl mb-10">Creative Director • Brand Strategist</p>
+        <p class="text-slate-400 tracking-[0.18em] uppercase text-xs md:text-xl mb-10 bilingual-stack"><span class="bilingual-ar" lang="ar">مدير إبداعي • استراتيجي للعلامات التجارية</span><span class="bilingual-en" lang="en">Creative Director • Brand Strategist</span></p>
 
         <div class="flex flex-wrap justify-center gap-6 md:gap-10 reveal">
             <a href="https://www.linkedin.com/in/ahmed-khater-361258304/" target="_blank" class="social-link">LinkedIn</a>
@@ -141,27 +157,27 @@
                     <div class="grid grid-cols-3 gap-3 text-center">
                         <div class="py-3">
                             <span class="text-gold-gradient text-4xl md:text-5xl font-black">3</span>
-                            <p class="mt-2 text-slate-400 text-[10px] md:text-xs font-bold uppercase tracking-wider">Years</p>
+                            <p class="mt-2 text-slate-400 text-[10px] md:text-xs font-bold uppercase tracking-wider bilingual-stack"><span class="bilingual-ar" lang="ar">سنوات الخبرة</span><span class="bilingual-en" lang="en">Years</span></p>
                         </div>
                         <div class="py-3 border-x border-zinc-800">
                             <span class="text-gold-gradient text-4xl md:text-5xl font-black">35+</span>
-                            <p class="mt-2 text-slate-400 text-[10px] md:text-xs font-bold uppercase tracking-wider">Clients</p>
+                            <p class="mt-2 text-slate-400 text-[10px] md:text-xs font-bold uppercase tracking-wider bilingual-stack"><span class="bilingual-ar" lang="ar">العملاء</span><span class="bilingual-en" lang="en">Clients</span></p>
                         </div>
                         <div class="py-3">
                             <span class="text-gold-gradient text-4xl md:text-5xl font-black">15+</span>
-                            <p class="mt-2 text-slate-400 text-[10px] md:text-xs font-bold uppercase tracking-wider">Projects</p>
+                            <p class="mt-2 text-slate-400 text-[10px] md:text-xs font-bold uppercase tracking-wider bilingual-stack"><span class="bilingual-ar" lang="ar">المشاريع</span><span class="bilingual-en" lang="en">Projects</span></p>
                         </div>
                     </div>
                     <div class="h-px bg-gradient-to-r from-transparent via-[#bf953f]/60 to-transparent mt-5"></div>
-                    <p class="mt-5 text-center text-slate-500 text-xs uppercase tracking-widest">Brand Identity · Advertising</p>
+                    <p class="mt-5 text-center text-slate-500 text-xs uppercase tracking-widest bilingual-stack"><span class="bilingual-ar" lang="ar">الهوية البصرية • الإعلانات</span><span class="bilingual-en" lang="en">Brand Identity · Advertising</span></p>
                 </div>
             </div>
             <div class="reveal text-left">
-                <p class="text-gold-gradient text-xs font-bold uppercase tracking-[0.3em] mb-5">About Me</p>
-                <h2 class="text-4xl md:text-6xl font-black leading-tight mb-7">Designing Brands<br><span class="text-gold-gradient">With Purpose.</span></h2>
-                <p class="text-slate-400 leading-relaxed text-base md:text-lg max-w-2xl">Graphic designer with 3 years of experience creating visual identities and advertising campaigns. I've worked with 35+ clients and completed 15+ projects, One project is the visual identity for Amjad Residences, including its logo and real-estate branding. I turn ideas into clear, memorable visuals through thoughtful concepts, typography, and color.</p>
+                <p class="text-[#e2cd91] text-xs font-bold uppercase tracking-[0.3em] mb-5 bilingual-stack"><span class="bilingual-ar" lang="ar">نبذة عني</span><span class="bilingual-en" lang="en">About Me</span></p>
+                <h2 class="text-4xl md:text-6xl font-black leading-tight mb-7 bilingual-stack bilingual-heading"><span class="bilingual-ar" lang="ar">أصمّم علامات تجارية</span><span class="bilingual-en" lang="en">Designing Brands</span><span class="bilingual-ar text-gold-gradient" lang="ar">بهدف</span><span class="bilingual-en text-gold-gradient" lang="en">With Purpose.</span></h2>
+                <p class="text-slate-400 leading-relaxed text-base md:text-lg max-w-2xl bilingual-copy"><span class="bilingual-ar" lang="ar">مصمم جرافيك بخبرة 3 سنوات في تصميم الهويات البصرية والحملات الإعلانية. تعاونت مع أكثر من 35 عميلًا وأنجزت أكثر من 15 مشروعًا، من بينها الهوية البصرية لشركة أمجاد المساكن، بما يشمل الشعار وتطبيقاته العقارية. أحوّل الأفكار إلى تصاميم واضحة لا تُنسى من خلال مفاهيم مدروسة وخطوط وألوان متناسقة.</span><span class="bilingual-en" lang="en">Graphic designer with 3 years of experience creating visual identities and advertising campaigns. I've worked with 35+ clients and completed 15+ projects, One project is the visual identity for Amjad Residences, including its logo and real-estate branding. I turn ideas into clear, memorable visuals through thoughtful concepts, typography, and color.</span></p>
                 <div class="mt-8">
-                    <p class="text-slate-300 text-xs font-bold uppercase tracking-[0.2em] mb-4">Tools I Use</p>
+                    <p class="text-slate-300 text-xs font-bold uppercase tracking-[0.2em] mb-4 bilingual-stack"><span class="bilingual-ar" lang="ar">الأدوات التي أستخدمها</span><span class="bilingual-en" lang="en">Tools I Use</span></p>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-3 py-2 border border-zinc-800 rounded-full text-slate-400 text-xs">Photoshop</span>
                         <span class="px-3 py-2 border border-zinc-800 rounded-full text-slate-400 text-xs">Illustrator</span>
@@ -176,21 +192,21 @@
 
     <section class="py-32 px-6 md:px-20 bg-[#050505]">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-5xl font-black mb-24 uppercase reveal">Featured <span class="text-gold-gradient">Works</span></h2>
+            <h2 class="text-5xl font-black mb-24 uppercase reveal bilingual-stack bilingual-heading"><span class="bilingual-ar" lang="ar">أعمال مختارة</span><span class="bilingual-en text-gold-gradient" lang="en">Featured Works</span></h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-20 featured-works-grid">
 
                 <div class="group reveal amjad-identity-card">
-                    <a href="projects/amjad-identity/2-white.png" data-fancybox="amjad-identity" data-caption="White logo">
-                        <div class="project-card aspect-video amjad-identity-cover"><img src="projects/amjad-identity/2-white.png" class="project-image amjad-identity-logo" alt="Amjad real estate visual identity — white logo"></div>
+                    <a href="projects/amjad-identity/2-white.png" data-fancybox="amjad-identity" data-caption="الشعار الأبيض | White logo">
+                        <div class="project-card aspect-video amjad-identity-cover"><img src="projects/amjad-identity/2-white.png" class="project-image amjad-identity-logo" alt="هوية أمجاد العقارية — الشعار الأبيض | Amjad real estate visual identity — white logo"></div>
                     </a>
                     <div style="display:none">
-                        <a href="projects/amjad-identity/1-black.png" data-fancybox="amjad-identity" data-caption="Black logo"></a>
-                        <a href="projects/amjad-identity/3-beige.png" data-fancybox="amjad-identity" data-caption="Beige logo"></a>
+                        <a href="projects/amjad-identity/1-black.png" data-fancybox="amjad-identity" data-caption="الشعار الأسود | Black logo"></a>
+                        <a href="projects/amjad-identity/3-beige.png" data-fancybox="amjad-identity" data-caption="الشعار البيج | Beige logo"></a>
                     </div>
                     <div class="amjad-identity-copy">
-                        <span class="amjad-identity-tag text-xs font-bold uppercase tracking-widest">Real Estate Visual Identity</span>
-                        <h3 class="amjad-identity-heading text-3xl font-black mt-3 uppercase">Amjad Real Estate Identity</h3>
-                        <p class="mt-4 leading-relaxed text-sm md:text-base max-w-xl">A cohesive visual identity for Amjad Al-Masakin Real Estate Company, presented through black, white, and warm beige logo variations.</p>
+                        <span class="amjad-identity-tag text-xs font-bold uppercase tracking-widest dual-label"><span class="bilingual-ar" lang="ar">هوية بصرية عقارية</span><span class="bilingual-en" lang="en">Real Estate Visual Identity</span></span>
+                        <h3 class="amjad-identity-heading text-3xl font-black mt-3 uppercase dual-title"><span class="bilingual-ar" lang="ar">هوية أمجاد العقارية</span><span class="bilingual-en" lang="en">Amjad Real Estate Identity</span></h3>
+                        <p class="mt-4 leading-relaxed text-sm md:text-base max-w-xl bilingual-copy"><span class="bilingual-ar" lang="ar">هوية بصرية متكاملة لشركة أمجاد المساكن العقارية، تُبرز الشعار بثلاثة ألوان: الأسود والأبيض والبيج الدافئ.</span><span class="bilingual-en" lang="en">A cohesive visual identity for Amjad Al-Masakin Real Estate Company, presented through black, white, and warm beige logo variations.</span></p>
                     </div>
                 </div>
 
@@ -204,23 +220,23 @@
                         <a href="projects/amjad/4.jpg" data-fancybox="amjad"></a>
                     </div>
                     <div class="mt-8 px-2">
-                        <span class="text-gold-gradient text-xs font-bold uppercase tracking-widest">Real Estate</span>
-                        <h3 class="text-3xl font-black mt-2 uppercase">Amjad Residences</h3>
+                        <span class="text-gold-gradient text-xs font-bold uppercase tracking-widest dual-label"><span class="bilingual-ar" lang="ar">عقارات</span><span class="bilingual-en" lang="en">Real Estate</span></span>
+                        <h3 class="text-3xl font-black mt-2 uppercase dual-title"><span class="bilingual-ar" lang="ar">مساكن أمجاد العقارية</span><span class="bilingual-en" lang="en">Amjad Residences</span></h3>
                     </div>
                 </div>
 
                 <div class="group reveal">
                     <a href="projects/appliances/1.webp" data-fancybox="appliances">
-                        <div class="project-card aspect-video"><img src="projects/appliances/1.webp" class="project-image" alt="Home Appliances Campaign"></div>
+                        <div class="project-card aspect-video"><img src="projects/appliances/1.webp" class="project-image" alt="حملة الأجهزة المنزلية | Home Appliances Campaign"></div>
                     </a>
                     <div style="display:none">
                         <a href="projects/appliances/2.webp?v=4c263bb" data-fancybox="appliances"></a>
                         <a href="projects/appliances/3.webp?v=4c263bb" data-fancybox="appliances"></a>
                     </div>
                     <div class="mt-8 px-2">
-                        <span class="text-gold-gradient text-xs font-bold uppercase tracking-widest">Home Appliances Advertising</span>
-                        <h3 class="text-3xl font-black mt-2 uppercase">Home Appliances Campaign</h3>
-                        <p class="mt-4 text-slate-400 leading-relaxed text-sm md:text-base max-w-xl">A bold end-of-season advertising concept designed to highlight premium home appliances through a dramatic, modern retail setting. The campaign uses strong contrast, warm lighting, and a clear promotional message to create urgency while reinforcing reliability and contemporary living.</p>
+                        <span class="text-gold-gradient text-xs font-bold uppercase tracking-widest dual-label"><span class="bilingual-ar" lang="ar">إعلانات الأجهزة المنزلية</span><span class="bilingual-en" lang="en">Home Appliances Advertising</span></span>
+                        <h3 class="text-3xl font-black mt-2 uppercase dual-title"><span class="bilingual-ar" lang="ar">حملة الأجهزة المنزلية</span><span class="bilingual-en" lang="en">Home Appliances Campaign</span></h3>
+                        <p class="mt-4 text-slate-400 leading-relaxed text-sm md:text-base max-w-xl bilingual-copy"><span class="bilingual-ar" lang="ar">مفهوم إعلاني جريء لموسم التخفيضات، يبرز الأجهزة المنزلية الفاخرة ضمن مشهد بيع عصري ودرامي. يعتمد التصميم على تباين قوي وإضاءة دافئة ورسالة ترويجية واضحة لخلق الإحساس بالإلحاح وتعزيز الموثوقية وأسلوب الحياة العصري.</span><span class="bilingual-en" lang="en">A bold end-of-season advertising concept designed to highlight premium home appliances through a dramatic, modern retail setting. The campaign uses strong contrast, warm lighting, and a clear promotional message to create urgency while reinforcing reliability and contemporary living.</span></p>
                     </div>
                 </div>
 
@@ -234,42 +250,42 @@
                         <a href="projects/adidas/4.jpg" data-fancybox="adidas"></a>
                     </div>
                     <div class="mt-8 px-2">
-                        <span class="text-gold-gradient text-xs font-bold uppercase tracking-widest">Sports Branding</span>
-                        <h3 class="text-3xl font-black mt-2 uppercase">Adidas Ultra</h3>
+                        <span class="text-gold-gradient text-xs font-bold uppercase tracking-widest dual-label"><span class="bilingual-ar" lang="ar">هوية رياضية</span><span class="bilingual-en" lang="en">Sports Branding</span></span>
+                        <h3 class="text-3xl font-black mt-2 uppercase dual-title"><span class="bilingual-ar" lang="ar">أديداس ألترا</span><span class="bilingual-en" lang="en">Adidas Ultra</span></h3>
                     </div>
                 </div>
 
                 <div class="group reveal">
                     <a href="projects/golden-gem/1.webp" data-fancybox="golden-gem">
-                        <div class="project-card aspect-video"><img src="projects/golden-gem/1.webp" class="project-image" alt="Golden Gem Fitness Branding"></div>
+                        <div class="project-card aspect-video"><img src="projects/golden-gem/1.webp" class="project-image" alt="هوية الجوهرة الذهبية للياقة البدنية | Golden Gem Fitness Branding"></div>
                     </a>
                     <div style="display:none">
                         <a href="projects/golden-gem/2.webp" data-fancybox="golden-gem"></a>
                     </div>
                     <div class="mt-8 px-2">
-                        <span class="text-gold-gradient text-xs font-bold uppercase tracking-widest">Fitness Branding</span>
-                        <h3 class="text-3xl font-black mt-2 uppercase">Golden Gem</h3>
+                        <span class="text-gold-gradient text-xs font-bold uppercase tracking-widest dual-label"><span class="bilingual-ar" lang="ar">هوية لياقة بدنية</span><span class="bilingual-en" lang="en">Fitness Branding</span></span>
+                        <h3 class="text-3xl font-black mt-2 uppercase dual-title"><span class="bilingual-ar" lang="ar">الجوهرة الذهبية</span><span class="bilingual-en" lang="en">Golden Gem</span></h3>
                     </div>
                 </div>
 
                 <div class="group reveal">
                     <a href="projects/kitchenware/1.webp" data-fancybox="kitchenware">
-                        <div class="project-card aspect-video"><img src="projects/kitchenware/1.webp" class="project-image" alt="Kitchenware Campaign"></div>
+                        <div class="project-card aspect-video"><img src="projects/kitchenware/1.webp" class="project-image" alt="حملة أدوات المطبخ | Kitchenware Campaign"></div>
                     </a>
                     <div style="display:none">
                         <a href="projects/kitchenware/2.webp" data-fancybox="kitchenware"></a>
                         <a href="projects/kitchenware/3.webp" data-fancybox="kitchenware"></a>
                     </div>
                     <div class="mt-8 px-2">
-                        <span class="text-gold-gradient text-xs font-bold uppercase tracking-widest">Kitchenware Advertising</span>
-                        <h3 class="text-3xl font-black mt-2 uppercase">Kitchenware Campaign</h3>
-                        <p class="mt-4 text-slate-400 leading-relaxed text-sm md:text-base max-w-xl">A warm, lifestyle-driven campaign created to showcase elegant cookware, dinnerware, and everyday kitchen essentials. The visual direction combines refined product styling with a welcoming home atmosphere to communicate quality, comfort, and timeless design.</p>
+                        <span class="text-gold-gradient text-xs font-bold uppercase tracking-widest dual-label"><span class="bilingual-ar" lang="ar">إعلانات أدوات المطبخ</span><span class="bilingual-en" lang="en">Kitchenware Advertising</span></span>
+                        <h3 class="text-3xl font-black mt-2 uppercase dual-title"><span class="bilingual-ar" lang="ar">حملة أدوات المطبخ</span><span class="bilingual-en" lang="en">Kitchenware Campaign</span></h3>
+                        <p class="mt-4 text-slate-400 leading-relaxed text-sm md:text-base max-w-xl bilingual-copy"><span class="bilingual-ar" lang="ar">حملة دافئة بطابع حياتي لعرض أواني الطهي وأطقم المائدة ومستلزمات المطبخ اليومية. تجمع الرؤية البصرية بين تنسيق المنتجات الأنيق وأجواء منزلية مرحّبة للتعبير عن الجودة والراحة والتصميم الخالد.</span><span class="bilingual-en" lang="en">A warm, lifestyle-driven campaign created to showcase elegant cookware, dinnerware, and everyday kitchen essentials. The visual direction combines refined product styling with a welcoming home atmosphere to communicate quality, comfort, and timeless design.</span></p>
                     </div>
                 </div>
 
                 <div class="group reveal">
                     <a href="projects/elite/1.jpg" data-fancybox="elite">
-                        <div class="project-card aspect-video"><img src="projects/elite/1.jpg" class="project-image" alt="Elite Branding"></div>
+                        <div class="project-card aspect-video"><img src="projects/elite/1.jpg" class="project-image" alt="هوية إيليت التجارية | Elite Branding"></div>
                     </a>
                     <div style="display:none">
                         <a href="projects/elite/2.jpg" data-fancybox="elite"></a>
@@ -277,8 +293,8 @@
                         <a href="projects/elite/4.jpg" data-fancybox="elite"></a>
                     </div>
                     <div class="mt-8 px-2">
-                        <span class="text-gold-gradient text-xs font-bold uppercase tracking-widest">Branding</span>
-                        <h3 class="text-3xl font-black mt-2 uppercase">Elite Identity</h3>
+                        <span class="text-gold-gradient text-xs font-bold uppercase tracking-widest dual-label"><span class="bilingual-ar" lang="ar">هوية تجارية</span><span class="bilingual-en" lang="en">Branding</span></span>
+                        <h3 class="text-3xl font-black mt-2 uppercase dual-title"><span class="bilingual-ar" lang="ar">هوية إيليت</span><span class="bilingual-en" lang="en">Elite Identity</span></h3>
                     </div>
                 </div>
 
@@ -287,7 +303,7 @@
     </section>
 
     <footer class="py-32 text-center border-t border-zinc-900 bg-black">
-        <h2 class="text-4xl font-black mb-12 uppercase reveal">Let's Create Something <span class="text-gold-gradient">Iconic</span></h2>
+        <h2 class="text-4xl font-black mb-12 uppercase reveal bilingual-stack bilingual-heading"><span class="bilingual-ar" lang="ar">لنصنع شيئًا أيقونيًا</span><span class="bilingual-en" lang="en"><span class="text-gold-gradient">Let's Create Something Iconic</span></span></h2>
 
         <div class="flex flex-wrap justify-center gap-6 mb-16 reveal">
             <a href="https://www.linkedin.com/in/ahmed-khater-361258304/" target="_blank" class="social-link">LinkedIn</a>
@@ -296,9 +312,9 @@
             <a href="https://www.facebook.com/profile.php?id=100092551592973" target="_blank" class="social-link">Facebook</a>
         </div>
 
-        <a href="mailto:ahmedkhater.design@gmail.com" class="inline-block px-10 py-4 border border-[#bf953f] text-[#bf953f] uppercase tracking-widest font-bold hover:bg-[#bf953f] hover:text-black transition-all duration-500 reveal">Send an Email</a>
+        <a href="mailto:ahmedkhater.design@gmail.com" class="inline-block px-10 py-4 border border-[#bf953f] text-[#bf953f] uppercase tracking-widest font-bold hover:bg-[#bf953f] hover:text-black transition-all duration-500 reveal bilingual-stack"><span class="bilingual-ar" lang="ar">راسلني عبر البريد الإلكتروني</span><span class="bilingual-en" lang="en">Send an Email</span></a>
 
-        <p class="mt-20 text-zinc-600 text-sm uppercase tracking-widest">© 2026 Ahmed Khater. All Rights Reserved.</p>
+        <p class="mt-20 text-zinc-600 text-sm uppercase tracking-widest">© 2026 Ahmed Khater. جميع الحقوق محفوظة · All Rights Reserved.</p>
     </footer>
 
     <script>
