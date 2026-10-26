@@ -66,6 +66,48 @@
         }
         .amjad-identity-heading { color: #fff; text-shadow: 0 4px 22px rgba(0, 0, 0, 0.38); }
         .amjad-identity-copy p { color: #cbd7e6; }
+        .featured-works-grid > .group.reveal:not(.amjad-identity-card) .project-card {
+            border: 1px solid rgba(232, 210, 161, 0.36);
+            background:
+                radial-gradient(circle at 16% 88%, rgba(224, 188, 116, 0.12), transparent 32%),
+                linear-gradient(135deg, #102e55 0%, #0b172a 58%, #090d15 100%);
+            box-shadow: 0 15px 38px rgba(0, 0, 0, 0.34);
+        }
+        .featured-works-grid > .group.reveal:not(.amjad-identity-card) .project-image {
+            transition: transform 0.65s cubic-bezier(0.2, 0.7, 0.2, 1), filter 0.65s ease;
+        }
+        .featured-works-grid > .group.reveal:not(.amjad-identity-card):hover .project-image {
+            transform: scale(1.045);
+            filter: saturate(1.08);
+        }
+        .featured-works-grid > .group.reveal:not(.amjad-identity-card) .project-card:hover {
+            border-color: rgba(232, 210, 161, 0.78);
+            box-shadow: 0 22px 46px rgba(11, 47, 91, 0.34), 0 12px 30px rgba(191, 149, 63, 0.12);
+        }
+        .featured-works-grid > .group.reveal:not(.amjad-identity-card) > .mt-8.px-2 {
+            margin-top: 1.5rem;
+            padding: 1.3rem 1.25rem;
+            border: 1px solid rgba(215, 190, 132, 0.28);
+            border-radius: 14px;
+            background: linear-gradient(135deg, rgba(14, 56, 104, 0.46), rgba(10, 17, 31, 0.9));
+            box-shadow: 0 16px 35px rgba(0, 0, 0, 0.22);
+        }
+        .featured-works-grid > .group.reveal:not(.amjad-identity-card) > .mt-8.px-2 > span {
+            display: inline-flex;
+            padding: 0.45rem 0.75rem;
+            border: 1px solid rgba(229, 203, 148, 0.4);
+            border-radius: 999px;
+            background: rgba(20, 74, 130, 0.34);
+            color: #f2ddae;
+            -webkit-text-fill-color: #f2ddae;
+        }
+        .featured-works-grid > .group.reveal:not(.amjad-identity-card) > .mt-8.px-2 > h3 {
+            color: #fff;
+            text-shadow: 0 4px 22px rgba(0, 0, 0, 0.36);
+        }
+        .featured-works-grid > .group.reveal:not(.amjad-identity-card) > .mt-8.px-2 > p {
+            color: #cbd7e6;
+        }
     </style>
 </head>
 <body>
@@ -135,7 +177,7 @@
     <section class="py-32 px-6 md:px-20 bg-[#050505]">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-5xl font-black mb-24 uppercase reveal">Featured <span class="text-gold-gradient">Works</span></h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-20 featured-works-grid">
 
                 <div class="group reveal amjad-identity-card">
                     <a href="projects/amjad-identity/2-white.png" data-fancybox="amjad-identity" data-caption="White logo">
