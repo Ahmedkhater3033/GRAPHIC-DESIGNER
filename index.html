@@ -19,6 +19,53 @@
         .reveal.active { opacity: 1; transform: translateY(0); }
         .social-link { color: #888; transition: all 0.3s ease; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: bold; }
         .social-link:hover { color: #bf953f; transform: translateY(-2px); }
+        .amjad-identity-cover {
+            border: 1px solid rgba(232, 210, 161, 0.72);
+            background:
+                radial-gradient(circle at 18% 82%, rgba(224, 188, 116, 0.18), transparent 30%),
+                radial-gradient(circle at 84% 18%, rgba(90, 159, 235, 0.38), transparent 34%),
+                linear-gradient(135deg, #185b9f 0%, #0b3568 56%, #061b39 100%);
+        }
+        .amjad-identity-cover::before {
+            content: "";
+            position: absolute;
+            inset: 14px;
+            border: 1px solid rgba(238, 220, 177, 0.28);
+            border-radius: 8px;
+            background: repeating-linear-gradient(135deg, transparent 0 22px, rgba(255, 255, 255, 0.025) 22px 23px);
+            pointer-events: none;
+        }
+        .amjad-identity-logo {
+            position: relative;
+            z-index: 1;
+            object-fit: contain;
+            padding: clamp(1.75rem, 5vw, 4.5rem);
+            filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.2));
+            transition: transform 0.5s ease, filter 0.5s ease;
+        }
+        .amjad-identity-cover:hover .amjad-identity-logo {
+            transform: scale(1.035);
+            filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.3));
+        }
+        .amjad-identity-copy {
+            margin-top: 2rem;
+            padding: 1.4rem 1.25rem;
+            border: 1px solid rgba(215, 190, 132, 0.3);
+            border-radius: 14px;
+            background: linear-gradient(135deg, rgba(14, 56, 104, 0.52), rgba(10, 17, 31, 0.88));
+            box-shadow: 0 16px 35px rgba(0, 0, 0, 0.24);
+        }
+        .amjad-identity-tag {
+            display: inline-flex;
+            padding: 0.45rem 0.75rem;
+            border: 1px solid rgba(229, 203, 148, 0.42);
+            border-radius: 999px;
+            background: rgba(20, 74, 130, 0.38);
+            color: #f2ddae;
+            -webkit-text-fill-color: #f2ddae;
+        }
+        .amjad-identity-heading { color: #fff; text-shadow: 0 4px 22px rgba(0, 0, 0, 0.38); }
+        .amjad-identity-copy p { color: #cbd7e6; }
     </style>
 </head>
 <body>
@@ -90,18 +137,18 @@
             <h2 class="text-5xl font-black mb-24 uppercase reveal">Featured <span class="text-gold-gradient">Works</span></h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
 
-                <div class="group reveal">
-                    <a href="projects/amjad-identity/1-black.png" data-fancybox="amjad-identity" data-caption="Black logo">
-                        <div class="project-card aspect-video" style="background:#f4f2e9"><img src="projects/amjad-identity/1-black.png" class="project-image" style="object-fit:contain" alt="Amjad real estate visual identity — black logo"></div>
+                <div class="group reveal amjad-identity-card">
+                    <a href="projects/amjad-identity/2-white.png" data-fancybox="amjad-identity" data-caption="White logo">
+                        <div class="project-card aspect-video amjad-identity-cover"><img src="projects/amjad-identity/2-white.png" class="project-image amjad-identity-logo" alt="Amjad real estate visual identity — white logo"></div>
                     </a>
                     <div style="display:none">
-                        <a href="projects/amjad-identity/2-white.png" data-fancybox="amjad-identity" data-caption="White logo"></a>
+                        <a href="projects/amjad-identity/1-black.png" data-fancybox="amjad-identity" data-caption="Black logo"></a>
                         <a href="projects/amjad-identity/3-beige.png" data-fancybox="amjad-identity" data-caption="Beige logo"></a>
                     </div>
-                    <div class="mt-8 px-2">
-                        <span class="text-gold-gradient text-xs font-bold uppercase tracking-widest">Real Estate Visual Identity</span>
-                        <h3 class="text-3xl font-black mt-2 uppercase">Amjad Real Estate Identity</h3>
-                        <p class="mt-4 text-slate-400 leading-relaxed text-sm md:text-base max-w-xl">A cohesive visual identity for Amjad Al-Masakin Real Estate Company, presented through black, white, and warm beige logo variations.</p>
+                    <div class="amjad-identity-copy">
+                        <span class="amjad-identity-tag text-xs font-bold uppercase tracking-widest">Real Estate Visual Identity</span>
+                        <h3 class="amjad-identity-heading text-3xl font-black mt-3 uppercase">Amjad Real Estate Identity</h3>
+                        <p class="mt-4 leading-relaxed text-sm md:text-base max-w-xl">A cohesive visual identity for Amjad Al-Masakin Real Estate Company, presented through black, white, and warm beige logo variations.</p>
                     </div>
                 </div>
 
